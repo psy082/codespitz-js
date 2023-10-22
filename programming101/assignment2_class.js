@@ -1,0 +1,1 @@
+const recursive = (arr, acc, i) => i < arr.length ? recursive(arr, acc + arr[i] , i + 1) : acc;

@@ -1,0 +1,467 @@
+
+{
+  "header": {
+    "reportVersion": 2,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200601.182909.58725.0.001.json",
+    "dumpEventTime": "2020-06-01T18:29:09Z",
+    "dumpEventTimeStamp": "1591003749060",
+    "processId": 58725,
+    "threadId": null,
+    "cwd": "/Users/donghokim/study/javascript/oop/calculator",
+    "commandLine": [
+      "node",
+      "simple_calculator.js"
+    ],
+    "nodejsVersion": "v12.16.3",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "darwin",
+    "componentVersions": {
+      "node": "12.16.3",
+      "v8": "7.8.279.23-node.35",
+      "uv": "1.34.2",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.16.0",
+      "modules": "72",
+      "nghttp2": "1.40.0",
+      "napi": "5",
+      "llhttp": "2.0.4",
+      "http_parser": "2.9.3",
+      "openssl": "1.1.1g",
+      "cldr": "36.0",
+      "icu": "65.1",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.16.3/node-v12.16.3.tar.gz"
+    },
+    "osName": "Darwin",
+    "osRelease": "19.3.0",
+    "osVersion": "Darwin Kernel Version 19.3.0: Thu Jan  9 20:58:23 PST 2020; root:xnu-6153.81.5~1/RELEASE_X86_64",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 63328860,
+        "nice": 0,
+        "sys": 41602640,
+        "idle": 556711810,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 4298510,
+        "nice": 0,
+        "sys": 3868130,
+        "idle": 653451970,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 56756590,
+        "nice": 0,
+        "sys": 30051480,
+        "idle": 574811280,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 4120410,
+        "nice": 0,
+        "sys": 3200090,
+        "idle": 654298050,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 45532650,
+        "nice": 0,
+        "sys": 22598820,
+        "idle": 593487790,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 3934710,
+        "nice": 0,
+        "sys": 2806420,
+        "idle": 654877320,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 37472790,
+        "nice": 0,
+        "sys": 17362890,
+        "idle": 606783490,
+        "irq": 0
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-8259U CPU @ 2.30GHz",
+        "speed": 2300,
+        "user": 3875960,
+        "nice": 0,
+        "sys": 2505260,
+        "idle": 655237140,
+        "irq": 0
+      }
+    ],
+    "networkInterfaces": [
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "127.0.0.1",
+        "netmask": "255.0.0.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "::1",
+        "netmask": "ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff",
+        "family": "IPv6",
+        "scopeid": 0
+      },
+      {
+        "name": "lo0",
+        "internal": true,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::1",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 1
+      },
+      {
+        "name": "en5",
+        "internal": false,
+        "mac": "ac:de:48:00:11:22",
+        "address": "fe80::aede:48ff:fe00:1122",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 4
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:94:cf:b2",
+        "address": "fe80::1888:a458:6d66:f821",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 6
+      },
+      {
+        "name": "en0",
+        "internal": false,
+        "mac": "38:f9:d3:94:cf:b2",
+        "address": "192.168.111.8",
+        "netmask": "255.255.255.0",
+        "family": "IPv4"
+      },
+      {
+        "name": "awdl0",
+        "internal": false,
+        "mac": "82:47:45:9a:7b:db",
+        "address": "fe80::8047:45ff:fe9a:7bdb",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 8
+      },
+      {
+        "name": "llw0",
+        "internal": false,
+        "mac": "82:47:45:9a:7b:db",
+        "address": "fe80::8047:45ff:fe9a:7bdb",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 9
+      },
+      {
+        "name": "utun0",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::18b2:54e3:e106:83d5",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 17
+      },
+      {
+        "name": "utun1",
+        "internal": false,
+        "mac": "00:00:00:00:00:00",
+        "address": "fe80::7045:4009:93d1:d954",
+        "netmask": "ffff:ffff:ffff:ffff::",
+        "family": "IPv6",
+        "scopeid": 18
+      }
+    ],
+    "host": "DongHoui-MacBookPro.local"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x0000000100164e03",
+      "symbol": "report::TriggerNodeReport(v8::Isolate*, node::Environment*, char const*, char const*, std::__1::basic_string<char, std::__1::char_traits<char>, std::__1::allocator<char> > const&, v8::Local<v8::String>) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x000000010008645a",
+      "symbol": "node::OnFatalError(char const*, char const*) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000100187c07",
+      "symbol": "v8::Utils::ReportOOMFailure(v8::internal::Isolate*, char const*, bool) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000100187ba7",
+      "symbol": "v8::internal::V8::FatalProcessOutOfMemory(v8::internal::Isolate*, char const*, bool) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000100315955",
+      "symbol": "v8::internal::Heap::FatalProcessOutOfMemory(char const*) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x00000001002e9fca",
+      "symbol": "v8::internal::Factory::NewFixedArrayWithFiller(v8::internal::RootIndex, int, v8::internal::Object, v8::internal::AllocationType) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000100465fe4",
+      "symbol": "v8::internal::(anonymous namespace)::ElementsAccessorBase<v8::internal::(anonymous namespace)::FastPackedObjectElementsAccessor, v8::internal::(anonymous namespace)::ElementsKindTraits<(v8::internal::ElementsKind)2> >::GrowCapacity(v8::internal::Handle<v8::internal::JSObject>, unsigned int) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x0000000100617f74",
+      "symbol": "v8::internal::Runtime_GrowArrayElements(int, unsigned long*, v8::internal::Isolate*) [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    },
+    {
+      "pc": "0x000000010097cc39",
+      "symbol": "Builtins_CEntry_Return1_DontSaveFPRegs_ArgvOnStack_NoBuiltinExit [/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node]"
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 2730180608,
+    "totalCommittedMemory": 2697764448,
+    "usedMemory": 2695250872,
+    "availableMemory": 16759296,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 33088,
+        "capacity": 32808,
+        "used": 32808,
+        "available": 0
+      },
+      "new_space": {
+        "memorySize": 33554432,
+        "committedMemory": 1994736,
+        "capacity": 16759296,
+        "used": 0,
+        "available": 16759296
+      },
+      "old_space": {
+        "memorySize": 1974272,
+        "committedMemory": 1619552,
+        "capacity": 1267432,
+        "used": 1267432,
+        "available": 0
+      },
+      "code_space": {
+        "memorySize": 430080,
+        "committedMemory": 176832,
+        "capacity": 157664,
+        "used": 157664,
+        "available": 0
+      },
+      "map_space": {
+        "memorySize": 266240,
+        "committedMemory": 246800,
+        "capacity": 172080,
+        "used": 172080,
+        "available": 0
+      },
+      "large_object_space": {
+        "memorySize": 1791131648,
+        "committedMemory": 1791131648,
+        "capacity": 1791107224,
+        "used": 1791107224,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 2784,
+        "used": 2784,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 902512640,
+        "committedMemory": 902512640,
+        "capacity": 902510880,
+        "used": 902510880,
+        "available": 0
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 3.6274,
+    "kernelCpuSeconds": 0.695194,
+    "cpuConsumptionPercent": 144.086,
+    "maxRss": 2781666607104,
+    "pageFaults": {
+      "IORequired": 3455,
+      "IONotRequired": 663386
+    },
+    "fsActivity": {
+      "reads": 0,
+      "writes": 0
+    }
+  },
+  "libuv": [
+  ],
+  "workers": [
+  ],
+  "environmentVariables": {
+    "USER": "donghokim",
+    "PATH": "/Users/donghokim/.nvm/versions/node/v12.16.3/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/donghokim/.nvm/versions/node/v12.16.3/bin:/Library/Frameworks/Python.framework/Versions/3.8/bin:/Users/donghokim/.npm-global/bin:/Users/donghokim/study/nand2tetris/tools:/Users/donghokim/miniconda3/bin:/Users/donghokim/.npm-global/bin:/Users/donghokim/study/nand2tetris/tools:/Users/donghokim/miniconda3/bin",
+    "LOGNAME": "donghokim",
+    "SSH_AUTH_SOCK": "/private/tmp/com.apple.launchd.qUkvs56pOn/Listeners",
+    "HOME": "/Users/donghokim",
+    "SHELL": "/bin/zsh",
+    "__CF_USER_TEXT_ENCODING": "0x1F5:0x3:0x33",
+    "TMPDIR": "/var/folders/86/1jh0tpgd4jj0t_gmc92dd6xr0000gn/T/",
+    "XPC_SERVICE_NAME": "0",
+    "XPC_FLAGS": "0x0",
+    "NVM_INC": "/Users/donghokim/.nvm/versions/node/v12.16.3/include/node",
+    "TERM_PROGRAM": "vscode",
+    "NVM_CD_FLAGS": "-q",
+    "TERM": "xterm-256color",
+    "TERM_PROGRAM_VERSION": "1.33.0",
+    "TERM_SESSION_ID": "w0t0p0:51977150-8795-4667-9B7F-CA7EF4866BA0",
+    "ZSH": "/Users/donghokim/.oh-my-zsh",
+    "NVM_DIR": "/Users/donghokim/.nvm",
+    "PAGER": "less",
+    "LSCOLORS": "Gxfxcxdxbxegedabagacad",
+    "PWD": "/Users/donghokim/study/javascript/oop/calculator",
+    "LANG": "ko_KR.UTF-8",
+    "ITERM_PROFILE": "Default",
+    "SHLVL": "1",
+    "COLORFGBG": "15;0",
+    "LC_TERMINAL_VERSION": "3.3.9",
+    "ITERM_SESSION_ID": "w0t0p0:51977150-8795-4667-9B7F-CA7EF4866BA0",
+    "LESS": "-R",
+    "NVM_BIN": "/Users/donghokim/.nvm/versions/node/v12.16.3/bin",
+    "LC_TERMINAL": "iTerm2",
+    "COLORTERM": "truecolor",
+    "APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL": "true",
+    "OLDPWD": "/Users/donghokim/study/javascript/oop",
+    "_": "/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node"
+  },
+  "userLimits": {
+    "core_file_size_blocks": {
+      "soft": 0,
+      "hard": "unlimited"
+    },
+    "data_seg_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "file_size_blocks": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_locked_memory_bytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_memory_size_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "open_files": {
+      "soft": 24576,
+      "hard": "unlimited"
+    },
+    "stack_size_bytes": {
+      "soft": 8388608,
+      "hard": 67104768
+    },
+    "cpu_time_seconds": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    },
+    "max_user_processes": {
+      "soft": 2784,
+      "hard": 4176
+    },
+    "virtual_memory_kbytes": {
+      "soft": "unlimited",
+      "hard": "unlimited"
+    }
+  },
+  "sharedObjects": [
+    "/Users/donghokim/.nvm/versions/node/v12.16.3/bin/node",
+    "/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation",
+    "/usr/lib/libSystem.B.dylib",
+    "/usr/lib/libc++.1.dylib",
+    "/usr/lib/libobjc.A.dylib",
+    "/usr/lib/libfakelink.dylib",
+    "/usr/lib/libDiagnosticMessagesClient.dylib",
+    "/usr/lib/libicucore.A.dylib",
+    "/usr/lib/libz.1.dylib",
+    "/usr/lib/libc++abi.dylib",
+    "/usr/lib/system/libcache.dylib",
+    "/usr/lib/system/libcommonCrypto.dylib",
+    "/usr/lib/system/libcompiler_rt.dylib",
+    "/usr/lib/system/libcopyfile.dylib",
+    "/usr/lib/system/libcorecrypto.dylib",
+    "/usr/lib/system/libdispatch.dylib",
+    "/usr/lib/system/libdyld.dylib",
+    "/usr/lib/system/libkeymgr.dylib",
+    "/usr/lib/system/liblaunch.dylib",
+    "/usr/lib/system/libmacho.dylib",
+    "/usr/lib/system/libquarantine.dylib",
+    "/usr/lib/system/libremovefile.dylib",
+    "/usr/lib/system/libsystem_asl.dylib",
+    "/usr/lib/system/libsystem_blocks.dylib",
+    "/usr/lib/system/libsystem_c.dylib",
+    "/usr/lib/system/libsystem_configuration.dylib",
+    "/usr/lib/system/libsystem_coreservices.dylib",
+    "/usr/lib/system/libsystem_darwin.dylib",
+    "/usr/lib/system/libsystem_dnssd.dylib",
+    "/usr/lib/system/libsystem_featureflags.dylib",
+    "/usr/lib/system/libsystem_info.dylib",
+    "/usr/lib/system/libsystem_m.dylib",
+    "/usr/lib/system/libsystem_malloc.dylib",
+    "/usr/lib/system/libsystem_networkextension.dylib",
+    "/usr/lib/system/libsystem_notify.dylib",
+    "/usr/lib/system/libsystem_sandbox.dylib",
+    "/usr/lib/system/libsystem_secinit.dylib",
+    "/usr/lib/system/libsystem_kernel.dylib",
+    "/usr/lib/system/libsystem_platform.dylib",
+    "/usr/lib/system/libsystem_pthread.dylib",
+    "/usr/lib/system/libsystem_symptoms.dylib",
+    "/usr/lib/system/libsystem_trace.dylib",
+    "/usr/lib/system/libunwind.dylib",
+    "/usr/lib/system/libxpc.dylib",
+    "/System/Library/CoreServices/Encodings/libKoreanConverter.dylib"
+  ]
+}

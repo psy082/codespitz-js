@@ -1,0 +1,93 @@
+<div   >life</div>
+<img     src="https://blog.kakaocdn.net/dn/0mySg/btqCUccOGVk/nQ68nZiNKoIEGNJkooELF1/img.jpg"    />
+
+<script>
+class HtmlParser {
+    regex;
+    matched;
+    captured;
+    leftHTML;
+    isElement;
+    type;
+    constructor(regex) {
+        this.regex = regex;
+    }
+    match(html) {
+        return Boolean(this.regex.exec(html));
+    }
+    _run(html, isElement, beforeElementType) {
+        const [matched, ...captured] = this.#regex.exec(html);
+        this.leftHTML = html.substring(matched.length, html.length);
+        this.run(captured, html, isElement, beforeElementType);
+    }
+    run(captured, html, isElement, beforeElementType) { throw "override"}
+
+    getResultSet(html, isElement, beforeElementType) {
+        this._run(html, isElement, beforeElementType);
+        return {
+            type: this.type,
+            name: this.captured,
+            leftHTML: this.leftHTML,
+            isElement: this.isElement
+        }
+    }
+}
+
+const ElementParser = class extends HtmlParser {
+    constructor() {
+        super(/^ *< *([A-Za-z0-9]+)/);
+    }
+    run(html, isElement, beforeElementType) {
+        if (isElement) throw 'Wrong HTML.';
+        this.type = UnpairedTags.isUnpairedTags(this.captured) ? Types.UNPAIRED_ELEMENT : Types.ELEMENT
+        this.isElement = true;
+    }
+}
+
+const ElementParser = class extends HtmlParser {
+    constructor() {
+        super(/^ *< *([A-Za-z0-9]+)/);
+    }
+    run(captured, html, isElement, beforeElementType) {
+        if (isElement) throw 'Wrong HTML.';
+        this.#tagName = captured[0];
+        this.type = UnpairedTags.isUnpairedTags(this.captured) ? Types.UNPAIRED_ELEMENT : Types.ELEMENT
+        this.isElement = true;
+    }
+}
+
+const ElementParser = class extends HtmlParser {
+    constructor() {
+        super(/^ *< *([A-Za-z0-9]+)/);
+    }
+    run(html, isElement, beforeElementType) {
+        if (isElement) throw 'Wrong HTML.';
+        this.type = UnpairedTags.isUnpairedTags(this.captured) ? Types.UNPAIRED_ELEMENT : Types.ELEMENT
+        this.isElement = true;
+    }
+    factory(name, isElement, nowElement){
+        const element = document.createElement(name);
+        if (nowElement) {
+            nowElement.appendChild(element);
+        }
+        return element;
+    }
+}
+
+_run(html, isElement, beforeElementType) {
+    const [matched, ...capture] = this.regex.exec(html);
+    this.leftHTML = html.substring(matched.length, html.length);
+    this.run(capture, html, isElement, beforeElementType);
+}
+
+export const parseHTML = (html) => {
+    const _parseHTML = (html, dom, isElement, nowElement, elementType) => {
+        if (!html) {
+            return dom;
+        }
+        const parsed = SpecificInfo.getFrom(html.trim(), isElement, elementType);
+        return _parseHTML(parsed.leftHTML, parsed.factory() ?? dom, ...)
+    };
+    return _parseHTML(html, null, false, null, null);
+}
+</script>
